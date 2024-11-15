@@ -121,16 +121,16 @@ Improve performance by loading videos only when they appear in the viewport:
 Transform video URLs using your custom CDN function:
 
 ```tsx
-import { getCDNUrl } from 'next-video';
+import { cdnURL } from 'next-video';
 
 // Your custom CDN logic
-const cdnTransform = (path: string) => `https://mycdn.example.com${path}`;
+const customCDN = (path: string) => `https://mycdn.example.com${path}`;
 
 <Video
-  src={getCDNUrl('/video.mp4', cdnTransform)}
+  src={cdnURL('/video.mp4', customCDN)}
   sources={[
     {
-      src: getCDNUrl('/video-480p.mp4', cdnTransform),
+      src: cdnURL('/video-480p.mp4', customCDN),
       type: 'video/mp4',
       media: '(max-width: 480px)',
     },
