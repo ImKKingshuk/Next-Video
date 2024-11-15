@@ -146,19 +146,19 @@ The `Video` component is the core of Next-Video. It provides a declarative way t
 
 **Props**:
 
-| Prop          | Type                      | Default     | Description                                              |
-| ------------- | ------------------------- | ----------- | -------------------------------------------------------- | ------------ | --------------------------------------------------- |
-| `src`         | `string`                  | `undefined` | The video source URL.                                    |
-| `sources`     | `ResponsiveVideoSource[]` | `[]`        | Array of responsive video sources.                       |
-| `poster`      | `string`                  | `undefined` | The poster image URL.                                    |
-| `placeholder` | `string`                  | `undefined` | The placeholder image URL (e.g., for a blurred preview). |
-| `lazy`        | `boolean`                 | `false`     | Whether to enable lazy loading.                          |
-| `hls`         | `boolean`                 | `false`     | Whether to enable HLS streaming support.                 |
-| `preload`     | `'auto'                   | 'metadata'  | 'none'`                                                  | `'metadata'` | Specifies how the browser should preload the video. |
-| `controls`    | `boolean`                 | `true`      | Whether to show video controls.                          |
-| `autoPlay`    | `boolean`                 | `false`     | Whether the video should autoplay.                       |
-| `muted`       | `boolean`                 | `false`     | Whether the video should be muted.                       |
-| `loop`        | `boolean`                 | `false`     | Whether the video should loop after playback.            |
+| Prop          | Type                             | Default      | Description                                              |
+| ------------- | -------------------------------- | ------------ | -------------------------------------------------------- |
+| `src`         | `string`                         | `undefined`  | The video source URL.                                    |
+| `sources`     | `ResponsiveVideoSource[]`        | `[]`         | Array of responsive video sources.                       |
+| `poster`      | `string`                         | `undefined`  | The poster image URL.                                    |
+| `placeholder` | `string`                         | `undefined`  | The placeholder image URL (e.g., for a blurred preview). |
+| `lazy`        | `boolean`                        | `false`      | Whether to enable lazy loading.                          |
+| `hls`         | `boolean`                        | `false`      | Whether to enable HLS streaming support.                 |
+| `preload`     | `'auto' \| 'metadata' \| 'none'` | `'metadata'` | Specifies how the browser should preload the video.      |
+| `controls`    | `boolean`                        | `true`       | Whether to show video controls.                          |
+| `autoPlay`    | `boolean`                        | `false`      | Whether the video should autoplay.                       |
+| `muted`       | `boolean`                        | `false`      | Whether the video should be muted.                       |
+| `loop`        | `boolean`                        | `false`      | Whether the video should loop after playback.            |
 
 ## License
 
