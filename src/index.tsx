@@ -1,4 +1,4 @@
 import Video from './Video';
-import { getCDNUrl } from './cdn';
+import { cdnURL } from './cdn';
 
-export { Video, getCDNUrl };
+export { Video, cdnURL };
